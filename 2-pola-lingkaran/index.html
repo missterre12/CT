@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pola Lingkaran</title>
+</head>
+<body>
+
+    <script>
+        // agar dapat digunakan berulang-ulang dengan menggunakan fungsi lingkaran menggunakan parameter pola
+        function lingkaran(pola) {
+
+            let hasil = '';
+            // Dilakukan pengulangan terhadap barisnmenggunakan for untuk membuat pola lingkaran
+            for(let i = 1; i <= pola + 1; i++) {
+                // melakukan pengulangan lagi dengan variabel yang berbeda
+                for(let j = 1; j <= pola + 2; j++) {
+                    // mencetak hasilnya
+                    hasil += '😬';
+                }
+                // barisnya akan terus bertambah
+                hasil += '\n';
+            }
+
+            console.log(hasil);
+        }
+        
+        // masukkan argumen / nilai
+        lingkaran(14);
+        lingkaran(3);
+        lingkaran(5);
+    </script>
+    
+</body>
+</html>
